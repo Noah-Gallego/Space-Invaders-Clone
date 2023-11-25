@@ -1,0 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(12, 181, 12);
+    
+}
+
+.grid {
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+}
+
+.invader {
+    background-image: url("/grayson.jpg");
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.shooter {
+    background-image: url("/shooter.jpg");
+    transform: scale(2);
+    z-index: -1;
+}
+
+.results {
+    font-family: 'Press Start 2P';
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+.current-score {
+    font-family: 'Press Start 2P';
+}
+
+.score {
+    font-family: 'Press Start 2P';
+    top: 40%;
+    position: absolute;
+    left: 3.5%;
+}
+
+.hide {
+    display: none;
+}
+
+.laser {
+    background-image: url("/laser.jpg");
+    transform: rotate(90deg);
+}
+
+.boom {
+    background-image: url("/boom.jpg");
+    transform: scale(1.5);
+}
+
+.winner {
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
